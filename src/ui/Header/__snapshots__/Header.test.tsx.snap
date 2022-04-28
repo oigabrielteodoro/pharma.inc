@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should be able snapshot is equal 1`] = `
+.c0 {
+  background: #ffffff;
+  box-shadow: 0 0 10rem 1rem rgba(0,0,0,0.1);
+  padding: 1.6rem;
+}
+
+.c1 {
+  max-width: 110rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  color: #334155;
+  font-size: 2.2rem;
+}
+
+.c2 span {
+  color: #6366f1;
+}
+
+.c3 {
+  color: #6366f1;
+  border-radius: 0.5rem;
+  background: #F5F3FF;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+<div>
+  <header
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <h1
+        aria-label="pharma inc"
+        class="c2"
+      >
+        Pharma 
+        <span>
+          Inc
+        </span>
+      </h1>
+      <div
+        aria-label="user avatar"
+        class="c3"
+      >
+        <svg
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+          />
+          <circle
+            cx="12"
+            cy="7"
+            r="4"
+          />
+        </svg>
+      </div>
+    </div>
+  </header>
+</div>
+`;
