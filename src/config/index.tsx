@@ -16,5 +16,6 @@ export function AppConfiguration({ children }: Props) {
   )
 }
 
+export * from './fetcher'
 export * from './ThemeGlobalStyle'
 export * from './ReactQueryWrapper'
