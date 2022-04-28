@@ -1,10 +1,20 @@
-import React, { ReactNode } from 'react'
+import React, { ComponentType, ReactNode } from 'react'
 
 import { ThemeGlobalStyle } from './ThemeGlobalStyle'
 import { ReactQueryWrapper } from './ReactQueryWrapper'
 
 type Props = {
   children: ReactNode
+}
+
+export function withAppConfiguration(Element: ComponentType) {
+  return function ElementWithAppConfiguration() {
+    return (
+      <AppConfiguration>
+        <Element />
+      </AppConfiguration>
+    )
+  }
 }
 
 export function AppConfiguration({ children }: Props) {

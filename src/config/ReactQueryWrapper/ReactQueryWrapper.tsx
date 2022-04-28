@@ -13,6 +13,7 @@ type Props = {
 export const queryClientConfig: QueryClientConfig = {
   defaultOptions: {
     queries: {
+      refetchOnWindowFocus: false,
       retry: import.meta.env.MODE === 'production' ? 3 : 0,
     },
   },
