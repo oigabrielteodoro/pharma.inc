@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { ThemeGlobalStyle } from 'config'
+import { AppConfiguration } from 'config'
 
 export function App() {
   return (
-    <>
-      <ThemeGlobalStyle />
-    </>
+    <AppConfiguration>
+      <h1>Teste</h1>
+    </AppConfiguration>
   )
 }
