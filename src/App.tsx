@@ -1,7 +1,11 @@
 import React from 'react'
 
-import * as S from './App.styled'
+import { ThemeGlobalStyle } from 'config'
 
 export function App() {
-  return <S.Title>Vite + TypeScript</S.Title>
+  return (
+    <>
+      <ThemeGlobalStyle />
+    </>
+  )
 }
