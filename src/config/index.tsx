@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 
 import { ThemeGlobalStyle } from './ThemeGlobalStyle'
-import { QueryClientProvider } from './QueryClientProvider'
+import { ReactQueryWrapper } from './ReactQueryWrapper'
 
 type Props = {
   children: ReactNode
@@ -9,12 +9,12 @@ type Props = {
 
 export function AppConfiguration({ children }: Props) {
   return (
-    <QueryClientProvider>
+    <ReactQueryWrapper>
       {children}
       <ThemeGlobalStyle />
-    </QueryClientProvider>
+    </ReactQueryWrapper>
   )
 }
 
 export * from './ThemeGlobalStyle'
-export * from './QueryClientProvider'
+export * from './ReactQueryWrapper'

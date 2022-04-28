@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import {
-  QueryClientProvider as ReactQueryClientProvider,
+  QueryClientProvider,
   QueryClient,
   QueryClientConfig,
 } from 'react-query'
@@ -18,13 +18,9 @@ export const queryClientConfig: QueryClientConfig = {
   },
 }
 
-export function QueryClientProvider({
+export function ReactQueryWrapper({
   children,
   client = new QueryClient(),
 }: Props) {
-  return (
-    <ReactQueryClientProvider client={client}>
-      {children}
-    </ReactQueryClientProvider>
-  )
+  return <QueryClientProvider client={client}>{children}</QueryClientProvider>
 }
