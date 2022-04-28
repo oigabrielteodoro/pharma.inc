@@ -34,6 +34,43 @@ exports[`Header should be able snapshot is equal 1`] = `
 }
 
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .userInfo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 1.6rem;
+}
+
+.c3 .userInfo strong {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.c3 .userInfo small {
+  margin-top: 0.4rem;
+  color: #94a3b8;
+  font-size: 1.2rem;
+}
+
+.c4 {
   color: #6366f1;
   border-radius: 0.5rem;
   background: #F5F3FF;
@@ -60,29 +97,43 @@ exports[`Header should be able snapshot is equal 1`] = `
         </span>
       </h1>
       <div
-        aria-label="user avatar"
         class="c3"
       >
-        <svg
-          fill="none"
-          height="24"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class="userInfo"
         >
-          <path
-            d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
-          />
-          <circle
-            cx="12"
-            cy="7"
-            r="4"
-          />
-        </svg>
+          <strong>
+            Gabriel Teodoro
+          </strong>
+          <small>
+            Front-End
+          </small>
+        </div>
+        <div
+          aria-label="user avatar"
+          class="c4"
+        >
+          <svg
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+            />
+            <circle
+              cx="12"
+              cy="7"
+              r="4"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </header>

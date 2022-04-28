@@ -24,6 +24,29 @@ export const Logo = styled.h1`
   }
 `
 
+export const User = styled.div`
+  display: flex;
+  align-items: center;
+
+  .userInfo {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: ${theme.spacing[3]};
+
+    strong {
+      font-weight: 500;
+      font-size: ${theme.font.sizes.small};
+    }
+
+    small {
+      margin-top: 0.4rem;
+      color: ${theme.colors.gray[400]};
+      font-size: ${theme.font.sizes.disclaimer};
+    }
+  }
+`
+
 export const Avatar = styled.div`
   color: ${theme.colors.indigo[500]};
   border-radius: ${theme.radius.medium};
