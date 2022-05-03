@@ -2,9 +2,14 @@
 
 exports[`Header should be able snapshot is equal 1`] = `
 .c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #ffffff;
   box-shadow: 0 0 10rem 1rem rgba(0,0,0,0.1);
   padding: 1.6rem;
+  z-index: 2;
 }
 
 .c1 {

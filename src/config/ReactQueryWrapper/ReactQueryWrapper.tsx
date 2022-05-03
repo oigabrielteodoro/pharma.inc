@@ -21,7 +21,7 @@ export const queryClientConfig: QueryClientConfig = {
 
 export function ReactQueryWrapper({
   children,
-  client = new QueryClient(),
+  client = new QueryClient(queryClientConfig),
 }: Props) {
   return <QueryClientProvider client={client}>{children}</QueryClientProvider>
 }

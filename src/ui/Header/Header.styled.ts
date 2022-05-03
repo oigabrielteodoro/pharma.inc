@@ -2,9 +2,14 @@ import styled from 'styled-components'
 import { theme } from 'config'
 
 export const Container = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: ${theme.colors.white};
   box-shadow: ${theme.shadow.medium};
   padding: ${theme.spacing[3]};
+  z-index: ${theme.layers.alwaysOnTop};
 `
 
 export const Content = styled.div`

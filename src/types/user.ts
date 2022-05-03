@@ -1,9 +1,13 @@
 export type User = {
-  gender: string
+  gender: 'male' | 'female'
   name: {
     title: string
     first: string
     last: string
+  }
+  registered: {
+    date: string
+    age: number
   }
 }
 
