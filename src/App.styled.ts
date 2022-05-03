@@ -1,7 +1,13 @@
+import { theme } from 'config'
 import styled from 'styled-components'
 
-export const Title = styled.h1`
+export const Container = styled.main`
+  max-width: ${theme.grid.maxWidth};
+  margin: 10rem auto;
+`
+
+export const CardHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `
